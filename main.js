@@ -11,6 +11,13 @@ var turn = 'x';
 let title = document.getElementById("title");
 let squares=[];
 
+function Draw() {
+    for (let i = 1; i < 10; i++) {
+        squares[i] = document.getElementById("item" + i).innerHTML;
+    }
+    
+    
+}
 function end(num1 , num2 , num3) {
     title.innerHTML = `${squares[num1]} Winner`;
     document.getElementById("item" + num1).style.background = "black";
@@ -57,6 +64,13 @@ function winner() {
     else if(squares[3] == squares[5] && squares[5] == squares[7] && squares[3] != '')
     {
         end(3,5,7);
+    }
+    else if (squares[1]!='' && squares[2]!='' && squares[3]!='' && squares[4]!='' && squares[5]!='' && squares[6]!='' && squares[7]!='' && squares[8]!='' &&squares[9]!='')
+    {
+        title.innerHTML = "OMG... It's a Draw.";
+        title.style.color = 'white';
+        setInterval(function(){title.innerHTML += '.'},1000);
+        setTimeout(function(){location.reload()},4000);
     }
 }
 
