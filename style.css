@@ -1,0 +1,38 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+.game{
+    margin: auto;
+    width: 600px;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+.title{
+    padding: 15px 0;
+    background-color:rebeccapurple;
+    margin: 50px 0 10px 0;
+    font-size: 30px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+}
+span{
+    color:rgb(255, 247, 0);
+    text-shadow: 0 0 6px , 0 0 6px;
+}
+.square{
+    margin: 2px;
+    width: 191px;
+    height: 191px;
+    background: rebeccapurple;
+    float: left;
+    font-size: 150px;
+    border-radius: 5px;
+}
+.square:hover{
+    cursor: pointer;
+    background: black;
+}
