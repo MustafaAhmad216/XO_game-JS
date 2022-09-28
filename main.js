@@ -26,7 +26,7 @@ function end(num1 , num2 , num3) {
 
     setInterval( function(){title.innerHTML += '.'} ,1000);
     setTimeout( function(){location.reload()} ,4000);    
-    
+    turn = '0';   
 }
 
 function winner() {
@@ -97,5 +97,4 @@ function game(id)
 
     }
     winner();
-    turn = '0';
 }
