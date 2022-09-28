@@ -97,4 +97,5 @@ function game(id)
 
     }
     winner();
+    turn = '0';
 }
